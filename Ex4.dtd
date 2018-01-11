@@ -1,0 +1,24 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT AbsoluteMove (ProfileToken,Position)>
+<!ATTLIST AbsoluteMove
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT ProfileToken (#PCDATA)>
+<!ATTLIST ProfileToken
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Position (PanTilt,Zoom)>
+<!ATTLIST Position
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT PanTilt EMPTY>
+<!ATTLIST PanTilt
+  xmlns CDATA #FIXED ''
+  x CDATA #REQUIRED
+  y CDATA #REQUIRED>
+
+<!ELEMENT Zoom EMPTY>
+<!ATTLIST Zoom
+  xmlns CDATA #FIXED ''
+  x CDATA #REQUIRED>
